@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أضف خبر - الشنقيطي نيوز</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="text-center" style="background:#b30000; color:white; padding:1rem 0;">
+    <h1>الشنقيطي نيوز</h1>
+    <nav>
+      <a href="index.html" style="color:white; margin-left:1rem;">الرئيسية</a>
+      <a href="politics.html" style="color:white; margin-left:1rem;">السياسة</a>
+      <a href="economy.html" style="color:white; margin-left:1rem;">الاقتصاد</a>
+      <a href="sports.html" style="color:white; margin-left:1rem;">الرياضة</a>
+      <a href="tech.html" style="color:white; margin-left:1rem;">التكنولوجيا</a>
+      <a href="about.html" style="color:white; margin-left:1rem;">عن الموقع</a>
+      <a href="contact.html" style="color:white; margin-left:1rem;">اتصل بنا</a>
+      <a href="add-news.html" style="color:white; margin-left:1rem;">أضف خبر</a>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <h2>أضف خبراً جديداً</h2>
+    <p><strong>ملاحظة:</strong> هذا النموذج تجريبي ولا يرسل البيانات فعليًا.</p>
+    
+    <form>
+      <div class="mb-3">
+        <label for="title" class="form-label">عنوان الخبر</label>
+        <input type="text" class="form-control" id="title" placeholder="أدخل عنوان الخبر" />
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">القسم</label>
+        <select class="form-control" id="category">
+          <option>السياسة</option>
+          <option>الاقتصاد</option>
+          <option>الرياضة</option>
+          <option>التكنولوجيا</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="content" class="form-label">نص الخبر</label>
+        <textarea class="form-control" id="content" rows="6" placeholder="اكتب نص الخبر هنا"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">نشر الخبر</button>
+    </form>
+  </main>
+</body>
+</html>
